@@ -13,7 +13,6 @@ namespace Maratha_Restaurant_Application.Models
         public long OrderDetailId { get; set; }
 
         public long OrderMasterId { get; set; }
-        public OrderMasters OrderMasters { get; set; }
         public int FoodItemId {  get; set; }
         public FoodItems FoodItems { get; set; }
         public int FoodItemPrice{ get; set; }

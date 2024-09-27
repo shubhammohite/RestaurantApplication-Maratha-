@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Maratha-Restaurant-Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1774560e50a10b67efb2a04dbb13c40a11e2cba4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+39871380d95f202e6a67e166e5eeb2969564c4a2")]
 [assembly: System.Reflection.AssemblyProductAttribute("Maratha-Restaurant-Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Maratha-Restaurant-Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

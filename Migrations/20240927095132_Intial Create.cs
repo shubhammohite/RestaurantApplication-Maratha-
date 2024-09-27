@@ -5,7 +5,7 @@
 namespace Maratha_Restaurant_Application.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialCreate : Migration
+    public partial class IntialCreate : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -67,11 +67,11 @@ namespace Maratha_Restaurant_Application.Migrations
                     OrderDetailId = table.Column<long>(type: "bigint", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     OrderMasterId = table.Column<long>(type: "bigint", nullable: false),
-                    OrderMastersOrderMasterId = table.Column<long>(type: "bigint", nullable: false),
                     FoodItemId = table.Column<int>(type: "int", nullable: false),
                     FoodItemsFoodItemId = table.Column<int>(type: "int", nullable: false),
                     FoodItemPrice = table.Column<int>(type: "int", nullable: false),
-                    Quantity = table.Column<int>(type: "int", nullable: false)
+                    Quantity = table.Column<int>(type: "int", nullable: false),
+                    OrderMastersOrderMasterId = table.Column<long>(type: "bigint", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -86,8 +86,7 @@ namespace Maratha_Restaurant_Application.Migrations
                         name: "FK_OrderDetails_OrderMasters_OrderMastersOrderMasterId",
                         column: x => x.OrderMastersOrderMasterId,
                         principalTable: "OrderMasters",
-                        principalColumn: "OrderMasterId",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "OrderMasterId");
                 });
 
             migrationBuilder.CreateIndex(
